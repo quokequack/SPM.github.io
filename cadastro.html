@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPM | Cadastre-se!</title>
+    <script src="cadastro.js"></script>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <div class="box">
+        <h1>Bem-vindo!</h1>
+        <h2>Sua morte hoje é o seu post amanhã!</h2>
+        <div class="box-2">
+            <form>
+                <h1>Está pronto para aproveitar o melhor do post-mortem?</h1>
+                <h4>Como você morreu?</h4>
+                <select name="tiposMorte">
+                    <option value="tipo1">Assassinado</option>
+                    <option value="tipo2">Causas naturais</option>
+                    <option value="tipo3">Causas sobrenaturais</option>
+                    <option value="tipo4">Burrice</option>
+                </select><br>
+                <input type="text" id="nome" placeholder="Qual seu nome?">
+                <input id="cpf" placeholder="Insira seu CPF">
+                <input type="password" id="senha" placeholder="Insira uma senha">
+                <input type="password" id="senha2" placeholder="Confirme sua senha">
+                <button onclick="confirmaSenha();">Verificar senha</button>
+                <h4>De onde você é?</h4>
+                <select name="origem">
+                    <option value="valor1">Anime</option>
+                    <option value="valor1">Série</option>
+                    <option value="valor1">Filme</option>
+                    <option value="valor1">Livro</option>
+                    <option value="valor1">Mangá</option>
+                </select>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
