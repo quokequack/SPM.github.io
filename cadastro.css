@@ -1,0 +1,104 @@
+body{
+    padding:0;
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    background-color:black;
+}
+.container{
+    justify-content:center;
+    align-items:center;
+    width:30%;
+    height:90%;
+    margin-top:30px;
+    background-color:#ff000f;
+    border-radius:10px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px grey, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+.icon{
+    display:flex;
+    justify-content:center;
+    font-size:20px;
+}
+.icon a{
+    text-decoration:none;;
+    color:white;
+    margin-top:8px;
+    width:20px;
+}
+.icon a:hover{
+    color:black;
+}
+.icon h3{
+    margin-left:8px;
+    font-family:'Segoe UI',sans-serif;
+    color:white;
+}
+.container .header{
+    text-align:center;
+}
+.container h2{
+    text-align:center;
+    font-family:'Segoe UI', sans-serif;
+    margin-top:0;
+    font-style:italic;
+}
+.container h3{
+    text-align:center;
+    font-family:'Segoe UI', sans-serif;
+    margin-top:0;
+    text-transform:uppercase;
+}
+form{
+    position:relative;
+    text-align:center;
+    
+}
+form label{
+    text-transform:uppercase;
+    font-family:'Segoe UI',sans-serif;
+    display:inline-block;
+}
+form input{
+    display:block;
+    padding:15px 40px;
+    margin-left:18%;
+    border-radius:50px;
+    font-family:'Segoe UI', sans-serif;
+    font-weight:bold;
+    color:#ff000f;
+    border:2px solid black
+}
+form select{
+    margin-top:10px;
+    padding:10px;
+    border-radius:50px;
+    border:2px solid black;
+    font-family:'Segoe UI', sans-serif;
+    font-style:italic;
+    color:#ff000f;
+    font-weight:bold;
+}
+button{
+    margin-top:18px;
+    padding:15px 30px;
+    border-radius:50px;
+    background-color:transparent;
+    border:2px solid white;
+    color:white;
+    text-transform:uppercase;
+    font-weight:bold;
+}
+button:hover{
+    background-color:black;
+    cursor:pointer;
+    color:#ff000f;
+    border:2px solid black;
+}
+.error{
+    color:white;
+    font-family:'Trebuchet Ms', sans-serif;
+    font-weight:bold;
+}
