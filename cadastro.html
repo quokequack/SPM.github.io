@@ -1,42 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPM | Cadastre-se!</title>
-    <script src="cadastro.js"></script>
-    <link rel="stylesheet" href="cadastro.css">
-</head>
-<body>
-    <div class="box">
-        <h1>Bem-vindo!</h1>
-        <h2>Sua morte hoje é o seu post amanhã!</h2>
-        <div class="box-2">
-            <form>
-                <h1>Está pronto para aproveitar o melhor do post-mortem?</h1>
-                <h4>Como você morreu?</h4>
-                <select name="tiposMorte">
-                    <option value="tipo1">Assassinado</option>
-                    <option value="tipo2">Causas naturais</option>
-                    <option value="tipo3">Causas sobrenaturais</option>
-                    <option value="tipo4">Burrice</option>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="imagex/png" href="death.ico">
+        <script src="https://kit.fontawesome.com/12ee5e0116.js" crossorigin="anonymous"></script>
+        <title>SPM | Cadastre-se!</title>
+        <link rel="stylesheet" href="cadastro.css">
+    </head>
+    <body>
+        <script>
+            const myform = document.querySelector("#myform");
+            const user = document.querySelector("#user");
+            const email = document.querySelector("#email");
+            const password = document.querySelector("#password");
+            const password2 = document.querySelector("#password2");
+            const death = document.querySelector("#death");
+            const btn = document.querySelector("#btn");
+            const errorMsg = document.querySelector(".error-msg");
+
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                
+                const userValue = user.value;
+                const emailValue = email.value;
+                const passwordValue = password.value;
+                const password2Value = password2.value;
+                
+                if(userValue === " " || emailValue === " "){
+                    errorMsg.textContent = "Preencha os campos!";
+                    errorMsg.classList = "error";
+                }
+            })
+        </script>
+        <div class="container">
+            <div class="header">
+                <div class="icon">
+                   <a href="main.html" target="_blank" class="fa-solid fa-face-dizzy"></a>
+                   <h3>| SPM </h3>
+                </div>
+                <h2>Morrer não significa ir embora...</h2>
+                <h3>Criar conta</h3>
+                <small class="error-msg">Error message</small>
+            </div>
+            <form id="myform">
+                <label for="user">Nome de usuário</label>
+                <input type="text" id="user">
+                <label for="email">Insira seu email</label>
+                <input type='email' id="email">
+                <label for='password'>Senha</label>
+                <input type='password' id="password">
+                <label for="password2">Confirme a senha</label>
+                <input type="password" id="password2">
+                <label for="death">Como você morreu?</label>
+                <select id="death">
+                    <option id="op1">Assassinado</option>
+                    <option id="op2">Causas naturais</option>
+                    <option id="op3">Burrice</option>
                 </select><br>
-                <input type="text" id="nome" placeholder="Qual seu nome?">
-                <input id="cpf" placeholder="Insira seu CPF">
-                <input type="password" id="senha" placeholder="Insira uma senha">
-                <input type="password" id="senha2" placeholder="Confirme sua senha">
-                <button onclick="confirmaSenha();">Verificar senha</button>
-                <h4>De onde você é?</h4>
-                <select name="origem">
-                    <option value="valor1">Anime</option>
-                    <option value="valor1">Série</option>
-                    <option value="valor1">Filme</option>
-                    <option value="valor1">Livro</option>
-                    <option value="valor1">Mangá</option>
-                </select>
+                <button id="btn" type="submit">Enviar</button>
             </form>
         </div>
-    </div>
-</body>
+    </body>
 </html>
