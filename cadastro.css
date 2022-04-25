@@ -71,6 +71,10 @@ form input{
     color:#ff000f;
     border:2px solid black
 }
+form .inputSuccess{
+    border:2px solid #1DE227;
+    visibility:hidden;
+}
 form select{
     margin-top:10px;
     padding:10px;
@@ -97,8 +101,13 @@ button:hover{
     color:#ff000f;
     border:2px solid black;
 }
+.error-msg{
+    visibility:hidden;
+}
 .error{
+    visibility:visible;
     color:white;
     font-family:'Trebuchet Ms', sans-serif;
     font-weight:bold;
+    border:2px solid #E1341E;
 }
