@@ -10,30 +10,6 @@
         <link rel="stylesheet" href="cadastro.css">
     </head>
     <body>
-        <script>
-            const myform = document.querySelector("#myform");
-            const user = document.querySelector("#user");
-            const email = document.querySelector("#email");
-            const password = document.querySelector("#password");
-            const password2 = document.querySelector("#password2");
-            const death = document.querySelector("#death");
-            const btn = document.querySelector("#btn");
-            const errorMsg = document.querySelector(".error-msg");
-
-            btn.addEventListener('click', (e) => {
-                e.preventDefault();
-                
-                const userValue = user.value;
-                const emailValue = email.value;
-                const passwordValue = password.value;
-                const password2Value = password2.value;
-                
-                if(userValue === " " || emailValue === " "){
-                    errorMsg.textContent = "Preencha os campos!";
-                    errorMsg.classList = "error";
-                }
-            })
-        </script>
         <div class="container">
             <div class="header">
                 <div class="icon">
@@ -62,5 +38,6 @@
                 <button id="btn" type="submit">Enviar</button>
             </form>
         </div>
+        <script src="cadastro.js"></script>
     </body>
 </html>
